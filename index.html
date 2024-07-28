@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: 'Poppins';
+        src: url('font/Poppins-Regular.ttf') format('truetype');
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container px-6 h-screen w-screen flex justify-center flex-col items-center font-poppins bg-[#B8F2E6]"
+    >
+      <h1 class="text-3xl font-extrabold text-primary text-center tracking-wider">
+        SUIT MATEMATIKA
+      </h1>
+      <p class="text-base text-center mt-2 text-secondary font-medium">Yuk, Ice Breaking Dulu</p>
+      <a
+        href="content/suitPlusMinus.html"
+        class="bg-jingga w-48 cursor-pointer rounded-lg py-3 text-[14px] text-center font-semibold tracking-wider text-putih mt-8"
+      >
+        Suit Plus-Minus
+      </a>
+      <a
+        href="content/suitPerkalian.html"
+        id="materiDigital"
+        class="bg-jingga w-48 rounded-lg py-3 text-[14px] text-center font-semibold tracking-wider text-putih mt-4"
+      >
+        Suit Perkalian
+      </a>
+      <a
+        href="content/suitEksponen.html"
+        id="assesmentDigital"
+        class="bg-jingga w-48 rounded-lg py-3 text-[14px] text-center font-semibold tracking-wider text-putih mt-4"
+      >
+        Suit Eksponen
+      </a>
+    </div>
+    <script>
+      const pengantar = document.getElementById('pengantar');
+
+      pengantar.addEventListener('click', function () {
+        pengantar.nextElementSibling.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
